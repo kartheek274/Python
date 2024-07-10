@@ -1,0 +1,9 @@
+{
+	"name": "mission100kartheeksql-server",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2066a9cc-5ae8-402a-ab25-9f5f848b7ef8",
+		"tenantId": "08eaeb14-e813-413a-ab5b-3340345afd4e"
+	}
+}
