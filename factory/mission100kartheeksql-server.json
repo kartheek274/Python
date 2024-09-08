@@ -1,5 +1,10 @@
 {
 	"name": "mission100kartheeksql-server",
+	"properties": {
+		"globalConfigurations": {
+			"factoryStagingFolderPath": "K"
+		}
+	},
 	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
