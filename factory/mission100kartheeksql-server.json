@@ -2,7 +2,9 @@
 	"name": "mission100kartheeksql-server",
 	"properties": {
 		"globalConfigurations": {
-			"factoryStagingFolderPath": "Kartheekadeead"
+			"factoryStagingFolderPath": "Kartheekadeeadls",
+			"factoryStagingLSReferenceName": "ADLS linked services",
+			"factoryStagingLSType": "LinkedServiceReference"
 		}
 	},
 	"location": "eastus",
