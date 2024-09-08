@@ -2,7 +2,7 @@
 	"name": "mission100kartheeksql-server",
 	"properties": {
 		"globalConfigurations": {
-			"factoryStagingFolderPath": "Kartheekade"
+			"factoryStagingFolderPath": "Kartheekadeead"
 		}
 	},
 	"location": "eastus",
