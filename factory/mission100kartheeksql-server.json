@@ -4,7 +4,8 @@
 		"globalConfigurations": {
 			"factoryStagingFolderPath": "landing",
 			"factoryStagingLSReferenceName": "ADLS linked services",
-			"factoryStagingLSType": "LinkedServiceReference"
+			"factoryStagingLSType": "LinkedServiceReference",
+			"PipelineBillingEnabled": "true"
 		}
 	},
 	"location": "eastus",
