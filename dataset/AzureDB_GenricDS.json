@@ -1,0 +1,12 @@
+{
+	"name": "AzureDB_GenricDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azure SQL Linked Service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}

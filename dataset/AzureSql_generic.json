@@ -1,17 +1,9 @@
 {
 	"name": "AzureSql_generic",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "Azure SQL Linked Service",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [],
-		"typeProperties": {
-			"schema": "SalesLT",
-			"table": "Customer"
-		}
+		"schema": []
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

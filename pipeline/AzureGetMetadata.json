@@ -16,14 +16,20 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Product",
+						"referenceName": "Product_DS_CSV",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"exists"
+						"exists",
+						"itemName",
+						"itemType",
+						"lastModified",
+						"size",
+						"structure"
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -67,7 +73,6 @@
 									"storeSettings": {
 										"type": "AzureBlobFSReadSettings",
 										"recursive": true,
-										"wildcardFileName": "*csv",
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -75,15 +80,11 @@
 									}
 								},
 								"sink": {
-									"type": "DelimitedTextSink",
-									"storeSettings": {
-										"type": "AzureBlobFSWriteSettings"
-									},
-									"formatSettings": {
-										"type": "DelimitedTextWriteSettings",
-										"quoteAllText": true,
-										"fileExtension": ".txt"
-									}
+									"type": "AzureSqlSink",
+									"writeBehavior": "insert",
+									"sqlWriterUseTableLock": false,
+									"tableOption": "autoCreate",
+									"disableMetricsCollection": false
 								},
 								"enableStaging": false,
 								"translator": {
@@ -97,14 +98,18 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "Product",
+									"referenceName": "Product_DS_CSV",
 									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "Product_newcsv",
-									"type": "DatasetReference"
+									"referenceName": "AzureSqlGenericDB",
+									"type": "DatasetReference",
+									"parameters": {
+										"SchemaNameParam": "saleslt",
+										"TableNameParam": "Product_Copy"
+									}
 								}
 							]
 						}
